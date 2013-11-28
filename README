@@ -2,5 +2,8 @@ This project aims to predict the network traffic data for research.
 
 Data Source: LBL-TCP-3
 
+This trace contains two hours' worth of all wide-area TCP traffic between the Lawrence Berkeley Laboratory and the rest of the world .It is available here :
+http://ita.ee.lbl.gov/html/contrib/LBL-TCP-3.html
+
 
 ------to be added ------
