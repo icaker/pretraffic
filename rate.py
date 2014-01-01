@@ -1,5 +1,9 @@
-#! /usr/bin/python
-
+#! /usr/bin/env python
+#! -*-coding:utf-8 -*-
+"""
+Usage:
+python rate.py [time interval]
+"""
 import os
 from pandas import Series,DataFrame
 
@@ -13,8 +17,8 @@ def getdata(source):
         data.append([line[0],line[5]])
     file.close()
     return data
-           
-delta=input('Time interval /s:')
+
+delta=int(input('Time interval /s:'))
 data=getdata('lbl-tcp-3.tcp')
 frame=DataFrame(data,
                 columns=['timestamp','bytes'])
